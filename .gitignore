@@ -1,0 +1,33 @@
+# Environnement
+.env
+.env.*
+!.env.example
+
+# Composer
+/vendor/
+
+# Logs
+storage/logs/*
+!storage/logs/.gitkeep
+*.log
+
+# Uploads utilisateurs
+public/uploads/competitions/*
+!public/uploads/competitions/.gitkeep
+public/uploads/teams/*
+!public/uploads/teams/.gitkeep
+public/uploads/players/*
+!public/uploads/players/.gitkeep
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Sauvegardes locales
+*.sql.gz
+backups/

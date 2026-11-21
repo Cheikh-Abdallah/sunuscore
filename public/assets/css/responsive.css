@@ -1,0 +1,34 @@
+/* ============================================================
+   SUNUSCORE - Responsive
+   ============================================================ */
+
+/* Mobile first : on est déjà en mobile par défaut. */
+/* Tablette : >= 640px */
+@media (min-width: 640px) {
+    .container { padding: 0 24px; }
+    .grid-2 { grid-template-columns: repeat(2, 1fr); }
+    .grid-3 { grid-template-columns: repeat(2, 1fr); }
+    h1 { font-size: 30px; }
+    .hero-live { padding: 32px 28px; }
+}
+
+/* Desktop : >= 960px */
+@media (min-width: 960px) {
+    .grid-3 { grid-template-columns: repeat(3, 1fr); }
+    .navbar-links { display: flex; }
+    .bottom-nav { display: none; }
+    .page { padding-bottom: 32px; }
+    .footer { margin-top: 64px; }
+}
+
+/* Très grand : >= 1200px */
+@media (min-width: 1200px) {
+    h1 { font-size: 32px; }
+    .hero-score { font-size: 52px; }
+    .hero-team .logo { width: 76px; height: 76px; font-size: 26px; }
+}
+
+/* Zones tactiles : toujours ≥ 44px */
+@media (max-width: 639px) {
+    .navbar-links { display: none; }
+}

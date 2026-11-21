@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hors connexion — SUNUSCORE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --c-primary: #071A36;
+            --c-secondary: #155EEF;
+            --c-text: #172033;
+            --c-muted: #64748B;
+            --c-bg: #F5F7FB;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0; min-height: 100vh;
+            display: flex; align-items: center; justify-content: center;
+            background: var(--c-bg); color: var(--c-text);
+            font-family: 'Inter', system-ui, sans-serif;
+            padding: 24px; text-align: center;
+        }
+        .card {
+            background: #fff;
+            padding: 32px 24px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(7, 26, 54, 0.05);
+            max-width: 400px; width: 100%;
+        }
+        .icon {
+            font-size: 56px; margin-bottom: 16px;
+        }
+        h1 { font-size: 22px; margin: 0 0 12px; color: var(--c-primary); }
+        p { color: var(--c-muted); line-height: 1.5; margin: 0 0 24px; font-size: 15px; }
+        button {
+            background: var(--c-secondary); color: #fff; border: 0;
+            padding: 14px 24px; border-radius: 8px;
+            font-size: 15px; font-weight: 700; cursor: pointer;
+            width: 100%; transition: opacity 0.2s;
+        }
+        button:hover { opacity: 0.9; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="icon">📡</div>
+        <h1>Vous êtes hors ligne</h1>
+        <p>Impossible de charger cette page. Vérifiez votre connexion internet puis réessayez.</p>
+        <button onclick="window.location.reload()">Réessayer</button>
+    </div>
+</body>
+</html>

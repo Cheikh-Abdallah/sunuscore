@@ -1,0 +1,54 @@
+{
+  "name": "SUNUSCORE — Suivi Football",
+  "short_name": "SUNUSCORE",
+  "description": "Plateforme professionnelle de gestion et de suivi des compétitions de football.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#F5F7FB",
+  "theme_color": "#071A36",
+  "lang": "fr",
+  "dir": "ltr",
+  "categories": ["sports", "news"],
+  "icons": [
+    {
+      "src": "/assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icons/maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Matchs en direct",
+      "short_name": "Live",
+      "url": "/matches?filter=live",
+      "description": "Voir les matchs en cours"
+    },
+    {
+      "name": "Classement",
+      "short_name": "Classement",
+      "url": "/rankings",
+      "description": "Voir le classement actuel"
+    },
+    {
+      "name": "Statistiques",
+      "short_name": "Stats",
+      "url": "/statistics",
+      "description": "Voir les statistiques"
+    }
+  ]
+}

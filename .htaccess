@@ -1,0 +1,12 @@
+# ============================================================
+# SUNUSCORE - Redirection racine vers public/
+# ============================================================
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
+
+# Protection des dossiers sensibles
+<FilesMatch "^(\.env|\.env\..*|composer\.(json|lock)|README\.md)$">
+    Require all denied
+</FilesMatch>
